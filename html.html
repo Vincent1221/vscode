@@ -9,5 +9,14 @@
 <body>
     <div>1112223335555</div>
 </body>
-<script></script>
+<script>
+let websocket = new WebSocket("127");
+websocket.onmessage = (message) => {
+
+}
+let eventSource = new EventSource("url");
+eventSource.onmessage = (message) => {
+    console.log(event);
+}   
+</script>
 </html>
